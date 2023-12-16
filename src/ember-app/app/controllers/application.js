@@ -28,13 +28,13 @@ export default Controller.extend({
             link: 'i-i-s-k-hakhakhakha-банк-дан-l',
             caption: i18n.t('forms.application.sitemap.k-hakhakhakha.i-i-s-k-hakhakhakha-банк-дан-l.caption'),
             title: i18n.t('forms.application.sitemap.k-hakhakhakha.i-i-s-k-hakhakhakha-банк-дан-l.title'),
-            icon: 'briefcase',
+            icon: 'address card',
             children: null
           }, {
             link: 'i-i-s-k-hakhakhakha-клиент-l',
             caption: i18n.t('forms.application.sitemap.k-hakhakhakha.i-i-s-k-hakhakhakha-клиент-l.caption'),
             title: i18n.t('forms.application.sitemap.k-hakhakhakha.i-i-s-k-hakhakhakha-клиент-l.title'),
-            icon: 'edit',
+            icon: 'chart bar',
             children: null
           }]
         }

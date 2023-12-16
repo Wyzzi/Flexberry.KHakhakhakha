@@ -1,6 +1,6 @@
 import { moduleForModel, test } from 'ember-qunit';
 
-moduleForModel('i-i-s-k-hakhakhakha-банк-дан', 'Unit | Model | i-i-s-k-hakhakhakha-банк-дан', {
+moduleForModel('i-i-s-k-hakhakhakha-т-ч-кл', 'Unit | Model | i-i-s-k-hakhakhakha-т-ч-кл', {
   // Specify the other units that are required for this test.
   needs: [
     'model:i-i-s-k-hakhakhakha-банк-дан',

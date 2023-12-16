@@ -9,6 +9,7 @@ import java.util.UUID;
 
 import com.sap.olingo.jpa.metadata.core.edm.annotation.EdmIgnore;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Entity implementation class for Entity: Клиент
@@ -23,14 +24,14 @@ public class Klient {
     @Column(name = "primarykey", length = 16, unique = true, nullable = false)
     private UUID primarykey;
 
+    @Column(name = "НомерТел")
+    private String номертел;
+
     @Column(name = "Наим")
     private String наим;
 
     @Column(name = "ДР")
     private Date др;
-
-    @Column(name = "НомерТел")
-    private String номертел;
 
     @EdmIgnore
     @Converter(converterClass = UUIDConverter.class, name = "BankDan")
@@ -41,6 +42,9 @@ public class Klient {
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
     @JoinColumn(name = "BankDan", insertable = false, updatable = false)
     private BankDan bankdan;
+
+    @OneToMany(mappedBy = "klient", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
+    private List<TCHKl> tchkls;
 
 
     public Klient() {
@@ -53,6 +57,14 @@ public class Klient {
 
     public UUID getPrimarykey() {
         return primarykey;
+    }
+
+    public String getНомерТел() {
+      return номертел;
+    }
+
+    public void setНомерТел(String номертел) {
+      this.номертел = номертел;
     }
 
     public String getНаим() {
@@ -69,14 +81,6 @@ public class Klient {
 
     public void setДР(Date др) {
       this.др = др;
-    }
-
-    public String getНомерТел() {
-      return номертел;
-    }
-
-    public void setНомерТел(String номертел) {
-      this.номертел = номертел;
     }
 
 

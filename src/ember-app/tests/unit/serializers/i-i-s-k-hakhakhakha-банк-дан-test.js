@@ -11,6 +11,7 @@ moduleForModel('i-i-s-k-hakhakhakha-банк-дан', 'Unit | Serializer | i-i-s
 
     'model:i-i-s-k-hakhakhakha-банк-дан',
     'model:i-i-s-k-hakhakhakha-клиент',
+    'model:i-i-s-k-hakhakhakha-т-ч-кл',
     'validator:ds-error',
     'validator:presence',
     'validator:number',

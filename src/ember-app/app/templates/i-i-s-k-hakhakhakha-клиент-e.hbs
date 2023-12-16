@@ -81,4 +81,18 @@
     }}
     {{flexberry-validationmessage error=(v-get validationModel.банкДан "номКарт" "message")}}
   </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-k-hakhakhakha-клиент-e.тЧКл-caption"}}</label>
+    {{flexberry-groupedit
+      componentName="тЧКлGroupEdit"
+      mainModelProjection=modelProjection
+      modelProjection=modelProjection.attributes.тЧКл
+      content=model.тЧКл
+      readonly=readonly
+      orderable=false
+      class=(if (v-get validationModel "тЧКл" "isInvalid") "error")
+      data-test-i-i-s-k-hakhakhakha-клиент-e-тЧКл=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "тЧКл" "message")}}
+  </div>
 </form>

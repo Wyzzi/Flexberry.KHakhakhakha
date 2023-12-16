@@ -7,6 +7,7 @@ import IISKHakhakhakhaБанкДанEForm from './forms/i-i-s-k-hakhakhakha-ба
 import IISKHakhakhakhaКлиентEForm from './forms/i-i-s-k-hakhakhakha-клиент-e';
 import IISKHakhakhakhaБанкДанModel from './models/i-i-s-k-hakhakhakha-банк-дан';
 import IISKHakhakhakhaКлиентModel from './models/i-i-s-k-hakhakhakha-клиент';
+import IISKHakhakhakhaТЧКлModel from './models/i-i-s-k-hakhakhakha-т-ч-кл';
 
 const translations = {};
 $.extend(true, translations, EmberFlexberryTranslations);
@@ -14,7 +15,8 @@ $.extend(true, translations, EmberFlexberryTranslations);
 $.extend(true, translations, {
   models: {
     'i-i-s-k-hakhakhakha-банк-дан': IISKHakhakhakhaБанкДанModel,
-    'i-i-s-k-hakhakhakha-клиент': IISKHakhakhakhaКлиентModel
+    'i-i-s-k-hakhakhakha-клиент': IISKHakhakhakhaКлиентModel,
+    'i-i-s-k-hakhakhakha-т-ч-кл': IISKHakhakhakhaТЧКлModel
   },
 
   'application-name': 'K hakhakhakha',

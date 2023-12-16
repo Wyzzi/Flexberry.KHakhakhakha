@@ -34,6 +34,8 @@ namespace IIS.KHakhakhakha
             "ДР as \'Дата рождения\'",
             "БанкДан as \'Номер карты\'",
             "БанкДан.НомКарт as \'Номер карты\'"})]
+    [AssociatedDetailViewAttribute("КлиентE", "ТЧКл", "ТЧКлE", true, "", "Табличная часть Клиент", true, new string[] {
+            ""})]
     [View("КлиентL", new string[] {
             "Наим as \'ФИО\'",
             "НомерТел as \'Номер телефона\'",
@@ -42,13 +44,15 @@ namespace IIS.KHakhakhakha
     public class Клиент : ICSSoft.STORMNET.DataObject
     {
         
+        private string fНомерТел;
+        
         private string fНаим;
         
         private System.DateTime fДР;
         
-        private string fНомерТел;
-        
         private IIS.KHakhakhakha.БанкДан fБанкДан;
+        
+        private IIS.KHakhakhakha.DetailArrayOfТЧКл fТЧКл;
         
         // *** Start programmer edit section *** (Клиент CustomMembers)
 
@@ -181,6 +185,41 @@ namespace IIS.KHakhakhakha
                 // *** Start programmer edit section *** (Клиент.БанкДан Set end)
 
                 // *** End programmer edit section *** (Клиент.БанкДан Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Клиент.
+        /// </summary>
+        // *** Start programmer edit section *** (Клиент.ТЧКл CustomAttributes)
+
+        // *** End programmer edit section *** (Клиент.ТЧКл CustomAttributes)
+        public virtual IIS.KHakhakhakha.DetailArrayOfТЧКл ТЧКл
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Клиент.ТЧКл Get start)
+
+                // *** End programmer edit section *** (Клиент.ТЧКл Get start)
+                if ((this.fТЧКл == null))
+                {
+                    this.fТЧКл = new IIS.KHakhakhakha.DetailArrayOfТЧКл(this);
+                }
+                IIS.KHakhakhakha.DetailArrayOfТЧКл result = this.fТЧКл;
+                // *** Start programmer edit section *** (Клиент.ТЧКл Get end)
+
+                // *** End programmer edit section *** (Клиент.ТЧКл Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Клиент.ТЧКл Set start)
+
+                // *** End programmer edit section *** (Клиент.ТЧКл Set start)
+                this.fТЧКл = value;
+                // *** Start programmer edit section *** (Клиент.ТЧКл Set end)
+
+                // *** End programmer edit section *** (Клиент.ТЧКл Set end)
             }
         }
         

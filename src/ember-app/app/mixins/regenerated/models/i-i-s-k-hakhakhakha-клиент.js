@@ -8,7 +8,8 @@ export let Model = Mixin.create({
   дР: DS.attr('date'),
   наим: DS.attr('string'),
   номерТел: DS.attr('string'),
-  банкДан: DS.belongsTo('i-i-s-k-hakhakhakha-банк-дан', { inverse: null, async: false })
+  банкДан: DS.belongsTo('i-i-s-k-hakhakhakha-банк-дан', { inverse: null, async: false }),
+  тЧКл: DS.hasMany('i-i-s-k-hakhakhakha-т-ч-кл', { inverse: 'клиент', async: false })
 });
 
 export let ValidationRules = {
@@ -38,6 +39,13 @@ export let ValidationRules = {
       validator('presence', true),
     ],
   },
+  тЧКл: {
+    descriptionKey: 'models.i-i-s-k-hakhakhakha-клиент.validations.тЧКл.__caption__',
+    validators: [
+      validator('ds-error'),
+      validator('has-many'),
+    ],
+  },
 };
 
 export let defineProjections = function (modelClass) {
@@ -47,7 +55,11 @@ export let defineProjections = function (modelClass) {
     дР: attr('Дата рождения', { index: 2 }),
     банкДан: belongsTo('i-i-s-k-hakhakhakha-банк-дан', 'Номер карты', {
       номКарт: attr('Номер карты', { index: 4 })
-    }, { index: 3 })
+    }, { index: 3 }),
+    тЧКл: hasMany('i-i-s-k-hakhakhakha-т-ч-кл', 'Табличная часть Клиент', {
+      продукт: attr('Продукт', { index: 0 }),
+      колво: attr('Количество продуктов', { index: 1 })
+    })
   });
 
   modelClass.defineProjection('КлиентL', 'i-i-s-k-hakhakhakha-клиент', {

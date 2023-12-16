@@ -43,7 +43,13 @@
       "inverse": null
     }
   ],
-  "hasMany": [],
+  "hasMany": [
+    {
+      "name": "тЧКл",
+      "relatedTo": "i-i-s-k-hakhakhakha-т-ч-кл",
+      "inverse": "клиент"
+    }
+  ],
   "projections": [
     {
       "name": "КлиентE",
@@ -91,7 +97,15 @@
           "inverse": null
         }
       ],
-      "hasMany": []
+      "hasMany": [
+        {
+          "projectionName": "ТЧКлE",
+          "caption": "Табличная часть Клиент",
+          "name": "тЧКл",
+          "relatedTo": "i-i-s-k-hakhakhakha-т-ч-кл",
+          "inverse": null
+        }
+      ]
     },
     {
       "name": "КлиентL",

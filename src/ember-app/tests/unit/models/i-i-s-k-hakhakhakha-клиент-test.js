@@ -5,6 +5,7 @@ moduleForModel('i-i-s-k-hakhakhakha-клиент', 'Unit | Model | i-i-s-k-hakha
   needs: [
     'model:i-i-s-k-hakhakhakha-банк-дан',
     'model:i-i-s-k-hakhakhakha-клиент',
+    'model:i-i-s-k-hakhakhakha-т-ч-кл',
     'validator:ds-error',
     'validator:presence',
     'validator:number',

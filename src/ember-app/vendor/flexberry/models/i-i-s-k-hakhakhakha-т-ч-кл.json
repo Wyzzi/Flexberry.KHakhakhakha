@@ -1,0 +1,63 @@
+﻿{
+  "name": "IISKHakhakhakhaТЧКл",
+  "modelName": "i-i-s-k-hakhakhakha-т-ч-кл",
+  "className": "ТЧКл",
+  "nameSpace": "IIS.KHakhakhakha",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "колво",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "продукт",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "клиент",
+      "relatedTo": "i-i-s-k-hakhakhakha-клиент",
+      "inverse": "тЧКл"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТЧКлE",
+      "modelName": "i-i-s-k-hakhakhakha-т-ч-кл",
+      "attrs": [
+        {
+          "name": "продукт",
+          "caption": "Продукт",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "колво",
+          "caption": "Количество продуктов",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
