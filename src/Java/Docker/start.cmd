@@ -1,0 +1,1 @@
+docker-compose -p khakhakhakha-java up -d

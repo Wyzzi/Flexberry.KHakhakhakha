@@ -1,0 +1,29 @@
+﻿{
+  "applicationCaption": "K hakhakhakha",
+  "applicationTitle": "K hakhakhakha",
+  "items": [
+    {
+      "link": null,
+      "menuName": "k-hakhakhakha",
+      "caption": "KHakhakhakha",
+      "title": "KHakhakhakha",
+      "children": [
+        {
+          "link": "i-i-s-k-hakhakhakha-банк-дан-l",
+          "menuName": null,
+          "caption": "Банковские данные",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-k-hakhakhakha-клиент-l",
+          "menuName": null,
+          "caption": "Клиент",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-k-hakhakhakha-банк-дан-e",
+  "editForm": "i-i-s-k-hakhakhakha-банк-дан-e",
+  "external": false,
+  "caption": "Банковские данные",
+  "name": "IISKHakhakhakhaБанкДанL",
+  "className": "БанкДанL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-k-hakhakhakha-банк-дан",
+      "modelProjection": "БанкДанL"
+    }
+  ]
+}

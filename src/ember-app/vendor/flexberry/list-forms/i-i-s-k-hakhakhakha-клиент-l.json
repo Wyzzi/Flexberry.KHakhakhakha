@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-k-hakhakhakha-клиент-e",
+  "editForm": "i-i-s-k-hakhakhakha-клиент-e",
+  "external": false,
+  "caption": "Клиент",
+  "name": "IISKHakhakhakhaКлиентL",
+  "className": "КлиентL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-k-hakhakhakha-клиент",
+      "modelProjection": "КлиентL"
+    }
+  ]
+}

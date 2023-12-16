@@ -1,0 +1,75 @@
+﻿{
+  "name": "IISKHakhakhakhaБанкДан",
+  "modelName": "i-i-s-k-hakhakhakha-банк-дан",
+  "className": "БанкДан",
+  "nameSpace": "IIS.KHakhakhakha",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "cVV",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номКарт",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "БанкДанE",
+      "modelName": "i-i-s-k-hakhakhakha-банк-дан",
+      "attrs": [
+        {
+          "name": "номКарт",
+          "caption": "Номер карты",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "cVV",
+          "caption": "CVV",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "БанкДанL",
+      "modelName": "i-i-s-k-hakhakhakha-банк-дан",
+      "attrs": [
+        {
+          "name": "номКарт",
+          "caption": "Номер карты",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "cVV",
+          "caption": "CVV",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
